@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content-container{
+    border: 1px solid black;
+    margin: 0 20px;
+    
+}
+.container-1 {
+    border: 1px solid yellow;
+    height: 800px;
+}
+.hero-img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 55%;
+    height: 110%;
+}
+.container-2 {
+    border: 1px solid blue;
+    height: 500px;
+}
+.column-1 {
+    border: 1px solid green;
+    height: 200px;
+}
+.column-2 {
+    border: 1px solid red;
+    height: 200px;
+    
+}
+.card-container {
+    position: relative;
+    height: 500px;
+    bottom: 125px; /* Change this to position card container up and down */
+    left: 15%;
+}
+.card {
+    height: 150px;
+    border: 1px solid teal;
+    width: 70%;
+}
+
+@media screen and (min-width: 768px) {
+    .flex-container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .column {
+        flex-grow: 1;
+        width: 50%;
+    }
+}
