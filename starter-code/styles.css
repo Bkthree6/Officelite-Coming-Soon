@@ -2,6 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+}
+body {
+    position: relative;
+    font-family: 'Kumbh Sans', sans-serif;
+    z-index: 1;
+    
+}
+.section-1 {
+    position: relative;
+    background-color: #f0f0f0;
+    background-image: url('assets/home/bg-pattern-header.svg');
+    background-repeat: no-repeat;
+    background-size: 125%;
+    background-position: 50% -57%;
+    z-index: 1;
+    
 }
 .content-container{
     border: 1px solid black;
@@ -11,6 +28,12 @@
 .container-1 {
     border: 1px solid yellow;
     height: 800px;
+    
+}
+.header-img {
+    width: 175px;
+    display: block;
+    margin: 30px auto;
 }
 .hero-img {
     display: block;
@@ -19,38 +42,70 @@
     width: 55%;
     height: 110%;
 }
-.container-2 {
-    border: 1px solid blue;
-    height: 500px;
-}
 .column-1 {
     border: 1px solid green;
-    height: 200px;
+    margin: 30px 0;
 }
 .column-2 {
     border: 1px solid red;
-    height: 200px;
+
+
+}
+.container-header {
+    text-align: center;
+    font-size: 37px;
+    color: #25293A;
+}
+.container-para {
+    text-align: center;
+}
+.container-2 {
+    border: 1px solid blue;
+    height: 500px;
     
+}
+.section-2 {
+    background-color: #333950;
 }
 .card-container {
     position: relative;
     height: 500px;
     bottom: 125px; /* Change this to position card container up and down */
     left: 15%;
+    z-index: 100;
+    overflow: visible;
 }
 .card {
     height: 150px;
     border: 1px solid teal;
     width: 70%;
 }
+.content-1 {
+    border: 1px solid magenta;
+    height: 75px;
+}
+.content-2 {
+    border: 1px solid red;
+    height: 75px;
+}
 
 @media screen and (min-width: 768px) {
     .flex-container {
         display: flex;
         flex-direction: row-reverse;
+        
     }
     .column {
         flex-grow: 1;
+        width: 50%;
+        margin: 0;
+    }
+    .card {
+        display: flex;
+        flex-direction: row;
+    }
+    .content {
+        height: 100%;
         width: 50%;
     }
 }
