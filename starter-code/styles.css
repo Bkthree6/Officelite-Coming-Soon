@@ -66,11 +66,13 @@ body {
 }
 .section-2 {
     background-color: #333950;
+    
 }
 .card-container {
-    position: relative;
+    position: absolute;
     height: 500px;
-    bottom: 125px; /* Change this to position card container up and down */
+    width: 100%;
+    bottom: 175px; /* Change this to position card container up and down */
     left: 15%;
     z-index: 100;
     overflow: visible;
