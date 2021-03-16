@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    
 }
 body {
     position: relative;
@@ -10,94 +10,194 @@ body {
     z-index: 1;
     
 }
+/* --------------- 1st Section of Content --------------- */
 .section-1 {
     position: relative;
     background-color: #f0f0f0;
     background-image: url('assets/home/bg-pattern-header.svg');
     background-repeat: no-repeat;
-    background-size: 125%;
-    background-position: 50% -57%;
-    z-index: 1;
-    
+    background-size: 500px;
+    background-position: 50% -200px;
+    z-index: 1;  
 }
-.content-container{
+
+/* --- Content Container Attributes --- */
+.content-container {
     border: 1px solid black;
-    margin: 0 20px;
-    
+    margin: 0 20px;    
 }
+@media screen and (min-width: 768px) {
+    .content-container {
+        /* Tablet view */
+    }
+}
+
+/* -- 1st Container Attributes -- */
 .container-1 {
     border: 1px solid yellow;
-    height: 800px;
-    
+    height: 1500px;    
 }
-.header-img {
+@media screen and (min-width: 768px) {
+    .container-1 {
+        /* Tablet View */
+    }
+}
+
+.container-1-logo {
     width: 175px;
     display: block;
     margin: 30px auto;
 }
-.hero-img {
+@media screen and (min-width: 768px) {
+    .container-1-logo {
+        /* Tablet View */
+    }
+}
+
+/* - Section 1 Flex Items - */
+.item {
+    width: 330px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+    .item {
+        /* Tablet View */
+    }
+}
+
+/* Flex Item 1 */
+.container-1-flex-item-1 {
+    border: 1px solid green;
+
+}
+@media screen and (min-width: 768px) {
+    .container-1-flex-item-1 {
+        /* Tablet View */
+    }
+}
+
+.flex-item-1-img {
     display: block;
     margin: 0 auto;
     padding-top: 20px;
-    width: 55%;
+    width: 175px;
     height: 110%;
 }
-.column-1 {
-    border: 1px solid green;
-    margin: 30px 0;
+@media screen and (min-width: 768px) {
+    .flex-item-1-img {
+        /* Tablet View */
+    }
 }
-.column-2 {
+
+/* Flex Item 2 */
+.container-1-flex-item-2 {
     border: 1px solid red;
-
-
 }
-.container-header {
+@media screen and (min-width: 768px) {
+    .container-1-flex-item-2 {
+        /* Tablet View */
+    }
+}
+
+.flex-item-2-header {
     text-align: center;
     font-size: 37px;
     color: #25293A;
 }
-.container-para {
+@media screen and (min-width: 768px) {
+    .flex-item-2-header {
+        /* Tablet View */
+    }
+}
+
+.flex-item-2-para {
     text-align: center;
 }
+@media screen and (min-width: 768px) {
+    .flex-item-2-para {
+        /* Tablet View */
+    }
+}
+/* Might possibly have to add this 
+.container-1-flex-container:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+*/
+/* --------------- 2nd Section of Content --------------- */
+.section-2 {
+    background-color: #333950;   
+}
+@media screen and (min-width: 768px) {
+    .section-2 {
+        /* Tablet View */
+    }
+}
+
+/* -- 2nd Container Attributes -- */
 .container-2 {
     border: 1px solid blue;
-    height: 500px;
-    
+    height: 1500px; 
 }
-.section-2 {
-    background-color: #333950;
-    
+@media screen and (min-width: 768px) {
+    .container-2 {
+        /* Tablet View */
+    }
 }
+
+/* ----- Subscription Card Attributes ------ */
 .card-container {
-    position: absolute;
-    height: 500px;
-    width: 100%;
-    bottom: 175px; /* Change this to position card container up and down */
-    left: 15%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 1200px;
+    width: 85%;
+    margin: 0 auto;
+    bottom: 590px; /* Change this to position card container up and down */
     z-index: 100;
-    overflow: visible;
+    overflow: visible;    
 }
+@media screen and (min-width: 768px) {
+    .card-container {
+        /* Tablet View */
+    }
+}
+
 .card {
-    height: 150px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 280px;
     border: 1px solid teal;
-    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 25px;
 }
+@media screen and (min-width: 768px) {
+    .card {
+        /* Tablet View */
+    }
+}
+
 .content-1 {
-    border: 1px solid magenta;
-    height: 75px;
+    border: 1px solid magenta; 
+    height: 50%;
+    width: 100%;
 }
 .content-2 {
     border: 1px solid red;
-    height: 75px;
+    height: 50%;
 }
 
 @media screen and (min-width: 768px) {
-    .flex-container {
+    .container-1-flex-container {
         display: flex;
         flex-direction: row-reverse;
         
     }
-    .column {
+    .item {
         flex-grow: 1;
         width: 50%;
         margin: 0;
