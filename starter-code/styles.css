@@ -10,6 +10,16 @@ body {
     z-index: 1;
     
 }
+/* Default button */
+.button {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 25px;
+    background-color: #5175FF;
+    border: none;
+    height: 50px;
+    width: 150px;
+    color: #ffffff;
+}
 /* --------------- 1st Section of Content --------------- */
 .section-1 {
     position: relative;
@@ -79,7 +89,7 @@ body {
 
 .flex-item-1-img {
     display: block;
-    margin: 0 auto;
+    margin: 40px auto;
     padding-top: 20px;
     width: 175px;
     height: 110%;
@@ -104,6 +114,8 @@ body {
     text-align: center;
     font-size: 37px;
     color: #25293A;
+    line-height: 45px;
+    margin-bottom: 25px;
 }
 @media screen and (min-width: 768px) {
     .flex-item-2-header {
@@ -113,11 +125,18 @@ body {
 
 .flex-item-2-para {
     text-align: center;
+    color: #747B95;
+    line-height: 25px;
 }
 @media screen and (min-width: 768px) {
     .flex-item-2-para {
         /* Tablet View */
     }
+}
+
+.header-button {
+    display: block;
+    margin: 20px auto;
 }
 /* Might possibly have to add this 
 .container-1-flex-container:after {
@@ -128,7 +147,13 @@ body {
 */
 /* --------------- 2nd Section of Content --------------- */
 .section-2 {
-    background-color: #333950;   
+    background-color: #333950;
+    position: relative;
+    background-image: url('assets/home/bg-pattern-footer.svg');
+    background-repeat: no-repeat;
+    background-size: 700px;
+    background-position: 50% 130%;
+    z-index: 1;   
 }
 @media screen and (min-width: 768px) {
     .section-2 {
@@ -139,7 +164,7 @@ body {
 /* -- 2nd Container Attributes -- */
 .container-2 {
     border: 1px solid blue;
-    height: 1500px; 
+    height: 900px; 
 }
 @media screen and (min-width: 768px) {
     .container-2 {
@@ -148,6 +173,8 @@ body {
 }
 
 /* ----- Subscription Card Attributes ------ */
+
+/* --- Card Container --- */
 .card-container {
     position: relative;
     display: flex;
@@ -166,14 +193,20 @@ body {
     }
 }
 
+/* -- Card Attributes -- */
 .card {
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 400px;
     width: 280px;
+    background-color: #ffffff;
     border: 1px solid teal;
+    border-radius: 10px;
     margin: 0 auto;
     margin-bottom: 25px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 @media screen and (min-width: 768px) {
     .card {
@@ -181,14 +214,43 @@ body {
     }
 }
 
+/* - 1st Content on the Card - */
 .content-1 {
     border: 1px solid magenta; 
     height: 50%;
     width: 100%;
 }
+.card-header {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.card-price {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.card-header-para {
+    font-size: 16px;
+}
+
+/* - 2nd Content on the Card - */
 .content-2 {
     border: 1px solid red;
     height: 50%;
+}
+.card-content-2-para {
+    display: block;
+    margin: 20px 0;
+    font-size: 15px;
+    color: #747B95;
+}
+.card-button {
+    background-color: #829CFA;
+    box-shadow: none;
+}
+.date-time-container {
+    position: relative;
+    bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
