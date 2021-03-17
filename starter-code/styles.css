@@ -151,9 +151,10 @@ body {
     position: relative;
     background-image: url('assets/home/bg-pattern-footer.svg');
     background-repeat: no-repeat;
-    background-size: 700px;
-    background-position: 50% 130%;
-    z-index: 1;   
+    background-size: 650px;
+    background-position: 50% 100%;
+    z-index: 1; 
+    
 }
 @media screen and (min-width: 768px) {
     .section-2 {
@@ -165,6 +166,7 @@ body {
 .container-2 {
     border: 1px solid blue;
     height: 900px; 
+     
 }
 @media screen and (min-width: 768px) {
     .container-2 {
@@ -176,16 +178,17 @@ body {
 
 /* --- Card Container --- */
 .card-container {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 1200px;
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
-    bottom: 590px; /* Change this to position card container up and down */
+    bottom: 290px; /* Change this to position card container up and down */
     z-index: 100;
-    overflow: visible;    
+    overflow: visible;
+         
 }
 @media screen and (min-width: 768px) {
     .card-container {
@@ -197,8 +200,8 @@ body {
 .card {
     display: flex;
     flex-direction: column;
-    height: 400px;
-    width: 280px;
+    height: 450px;
+    width: 300px;
     background-color: #ffffff;
     border: 1px solid teal;
     border-radius: 10px;
@@ -207,6 +210,7 @@ body {
     padding: 10px;
     text-align: center;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    overflow-y: hidden;
 }
 @media screen and (min-width: 768px) {
     .card {
@@ -223,7 +227,7 @@ body {
 .card-header {
     font-size: 18px;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 .card-price {
     font-size: 40px;
@@ -240,7 +244,7 @@ body {
 }
 .card-content-2-para {
     display: block;
-    margin: 20px 0;
+    margin: 15px 0;
     font-size: 15px;
     color: #747B95;
 }
@@ -248,9 +252,42 @@ body {
     background-color: #829CFA;
     box-shadow: none;
 }
+/* ---- Date and Time Container ---- */
 .date-time-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    bottom: 0;
+    width: 90%;
+    height: 200px;
+    top: 650px;
+    margin: 0 auto;
+    border: 1px solid pink;
+}
+.time-container {
+    display: flex;
+    width: 300px;
+    height: 100px;
+    justify-content: center;
+}
+.time {
+    height: 60px;
+    width: 60px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #747B95;
+    margin: 10px 5px;
+    padding: 15px 10px;
+}
+.date-coming {
+    color: #ffffff;
+}
+.date {
+    color: #829CFA;
+}
+.time-button {
+    margin-top: 5px;
 }
 
 @media screen and (min-width: 768px) {
