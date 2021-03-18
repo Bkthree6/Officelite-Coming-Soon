@@ -23,7 +23,7 @@ body {
 /* --------------- 1st Section of Content --------------- */
 .section-1 {
     position: relative;
-    background-color: #f0f0f0;
+    background-color:  #F9F9F9;
     background-image: url('assets/home/bg-pattern-header.svg');
     background-repeat: no-repeat;
     background-size: 500px;
@@ -36,32 +36,17 @@ body {
     border: 1px solid black;
     margin: 0 20px;    
 }
-@media screen and (min-width: 768px) {
-    .content-container {
-        /* Tablet view */
-    }
-}
 
 /* -- 1st Container Attributes -- */
 .container-1 {
     border: 1px solid yellow;
     height: 1500px;    
 }
-@media screen and (min-width: 768px) {
-    .container-1 {
-        /* Tablet View */
-    }
-}
 
 .container-1-logo {
     width: 175px;
     display: block;
     margin: 30px auto;
-}
-@media screen and (min-width: 768px) {
-    .container-1-logo {
-        /* Tablet View */
-    }
 }
 
 /* - Section 1 Flex Items - */
@@ -70,21 +55,11 @@ body {
     margin: 0 auto;
     margin-bottom: 30px;
 }
-@media screen and (min-width: 768px) {
-    .item {
-        /* Tablet View */
-    }
-}
 
 /* Flex Item 1 */
 .container-1-flex-item-1 {
     border: 1px solid green;
 
-}
-@media screen and (min-width: 768px) {
-    .container-1-flex-item-1 {
-        /* Tablet View */
-    }
 }
 
 .flex-item-1-img {
@@ -94,20 +69,10 @@ body {
     width: 175px;
     height: 110%;
 }
-@media screen and (min-width: 768px) {
-    .flex-item-1-img {
-        /* Tablet View */
-    }
-}
 
 /* Flex Item 2 */
 .container-1-flex-item-2 {
     border: 1px solid red;
-}
-@media screen and (min-width: 768px) {
-    .container-1-flex-item-2 {
-        /* Tablet View */
-    }
 }
 
 .flex-item-2-header {
@@ -117,34 +82,19 @@ body {
     line-height: 45px;
     margin-bottom: 25px;
 }
-@media screen and (min-width: 768px) {
-    .flex-item-2-header {
-        /* Tablet View */
-    }
-}
+
 
 .flex-item-2-para {
     text-align: center;
     color: #747B95;
     line-height: 25px;
 }
-@media screen and (min-width: 768px) {
-    .flex-item-2-para {
-        /* Tablet View */
-    }
-}
 
 .header-button {
     display: block;
     margin: 20px auto;
 }
-/* Might possibly have to add this 
-.container-1-flex-container:after {
-    content: '';
-    display: table;
-    clear: both;
-}
-*/
+
 /* --------------- 2nd Section of Content --------------- */
 .section-2 {
     background-color: #333950;
@@ -156,22 +106,12 @@ body {
     z-index: 1; 
     
 }
-@media screen and (min-width: 768px) {
-    .section-2 {
-        /* Tablet View */
-    }
-}
 
 /* -- 2nd Container Attributes -- */
 .container-2 {
     border: 1px solid blue;
-    height: 900px; 
+    height: 1000px; 
      
-}
-@media screen and (min-width: 768px) {
-    .container-2 {
-        /* Tablet View */
-    }
 }
 
 /* ----- Subscription Card Attributes ------ */
@@ -183,18 +123,14 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     height: 1200px;
-    width: 90%;
+    width: 88%;
     margin: 0 auto;
     bottom: 290px; /* Change this to position card container up and down */
     z-index: 100;
     overflow: visible;
          
 }
-@media screen and (min-width: 768px) {
-    .card-container {
-        /* Tablet View */
-    }
-}
+
 
 /* -- Card Attributes -- */
 .card {
@@ -212,29 +148,36 @@ body {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     overflow-y: hidden;
 }
-@media screen and (min-width: 768px) {
-    .card {
-        /* Tablet View */
-    }
-}
 
 /* - 1st Content on the Card - */
 .content-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border: 1px solid magenta; 
     height: 50%;
     width: 100%;
 }
+
 .card-header {
     font-size: 18px;
     margin-top: 20px;
     margin-bottom: 30px;
 }
+
 .card-price {
     font-size: 40px;
     margin-bottom: 5px;
 }
+
 .card-header-para {
     font-size: 16px;
+}
+
+.tablet-card-button {
+    display: none;
+    height: 0;
+    width: 0;
 }
 
 /* - 2nd Content on the Card - */
@@ -242,16 +185,18 @@ body {
     border: 1px solid red;
     height: 50%;
 }
+
 .card-content-2-para {
     display: block;
     margin: 15px 0;
     font-size: 15px;
     color: #747B95;
 }
-.card-button {
+.mobile-card-button {
     background-color: #829CFA;
     box-shadow: none;
 }
+
 /* ---- Date and Time Container ---- */
 .date-time-container {
     display: flex;
@@ -265,6 +210,7 @@ body {
     margin: 0 auto;
     border: 1px solid pink;
 }
+
 .time-container {
     display: flex;
     width: 300px;
@@ -276,7 +222,7 @@ body {
     width: 60px;
     color: #ffffff;
     text-align: center;
-    background-color: #747B95;
+    background-color: #232941;
     margin: 10px 5px;
     padding: 15px 10px;
 }
@@ -290,23 +236,110 @@ body {
     margin-top: 5px;
 }
 
+/* ----------- Tablet Styles ----------- */
 @media screen and (min-width: 768px) {
+    .section-1 {
+        background-position: 185% -35%;
+        background-size: 600px;
+    }
+    .content-container {
+        margin: 0 auto;
+    }
+    .container-1 {
+        height: 1200px;
+    }
+    .container-1-logo {
+        margin: 60px 0;
+    }
     .container-1-flex-container {
         display: flex;
         flex-direction: row-reverse;
-        
+        margin-top: 100px;
     }
     .item {
         flex-grow: 1;
         width: 50%;
         margin: 0;
     }
+    .flex-item-1-img {
+        padding-top: 10px;
+        margin: 40px auto;
+        width: 300px;
+        height: 85%;
+    }
+    .container-1-flex-item-2 {
+        padding: 10px;
+    }
+    .flex-item-2-header {
+        text-align: left;
+        font-size: 40px;
+    }
+    .flex-item-2-para {
+        text-align: left;
+        line-height: 30px;
+        font-size: 20px;
+    }
+    .header-button {
+        margin: 40px 0;
+    }
+    .section-2 {
+        height: 800px;
+    }
+    .container-2 {
+        height: 100%;
+    }
+    .card-container {
+        width: 100%;
+        height: 900px;
+        bottom: 350px;
+    }
     .card {
-        display: flex;
         flex-direction: row;
+        width: 700px;
+        height: 275px;
+        text-align: left;
+        margin-bottom: 8px;
+    }
+    .content-1 {
+        width: 50%;
+        height: 100%;
+        padding: 0 20px;
     }
     .content {
         height: 100%;
         width: 50%;
+    }
+    .card-header {
+        margin-bottom: 20px;
+    }
+    .card-price {
+        margin-bottom: 10px;
+    }
+    .card-header-para {
+        margin-bottom: 25px;
+    }
+    .tablet-card-button {
+        display: block;
+        border: none;
+        border-radius: 25px;
+        height: 50px;
+        width: 150px;
+        box-shadow: none;
+    }
+    .content-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+        padding: 0 10px;
+    }
+    .mobile-card-button {
+        display: none;
+        height: 0;
+        width: 0;
+    }
+    .date-time-container {
+        top: 470px;
     }
 }
