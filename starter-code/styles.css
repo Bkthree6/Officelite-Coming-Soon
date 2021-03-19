@@ -34,19 +34,32 @@ body {
 /* --- Content Container Attributes --- */
 .content-container {
     border: 1px solid black;
-    margin: 0 20px;    
+    width: 90%;
+    margin: 0 auto;
 }
 
 /* -- 1st Container Attributes -- */
 .container-1 {
-    border: 1px solid yellow;
     height: 1500px;    
+}
+@media screen and (min-width: 1024px) {
+    .container-1 {
+        padding: 0 10%;
+    }
 }
 
 .container-1-logo {
     width: 175px;
     display: block;
     margin: 30px auto;
+}
+@media screen and (min-width: 1024px) {
+    .container-1-logo {
+        height: 40px;
+        width: 220px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
 }
 
 /* - Section 1 Flex Items - */
@@ -57,10 +70,6 @@ body {
 }
 
 /* Flex Item 1 */
-.container-1-flex-item-1 {
-    border: 1px solid green;
-
-}
 
 .flex-item-1-img {
     display: block;
@@ -71,8 +80,11 @@ body {
 }
 
 /* Flex Item 2 */
-.container-1-flex-item-2 {
-    border: 1px solid red;
+
+@media screen and (min-width: 1024px) {
+    .container-1-flex-item-2 {
+        margin-left: 40px;
+    }
 }
 
 .flex-item-2-header {
@@ -88,6 +100,15 @@ body {
     text-align: center;
     color: #747B95;
     line-height: 25px;
+}
+@media screen and (min-width: 1024px) {
+    .flex-item-2-header {
+        margin-bottom: 15px;
+    }
+    
+    .header-button {
+        margin: 5px 0;
+    }
 }
 
 .header-button {
@@ -109,9 +130,8 @@ body {
 
 /* -- 2nd Container Attributes -- */
 .container-2 {
-    border: 1px solid blue;
     height: 1000px; 
-     
+ 
 }
 
 /* ----- Subscription Card Attributes ------ */
@@ -123,12 +143,12 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     height: 1200px;
-    width: 88%;
+    width: 100%;
     margin: 0 auto;
-    bottom: 290px; /* Change this to position card container up and down */
+    bottom: 390px; /* Change this to position card container up and down */
+    right: 0px;
     z-index: 100;
-    overflow: visible;
-         
+    overflow: visible;     
 }
 
 
@@ -139,7 +159,6 @@ body {
     height: 450px;
     width: 300px;
     background-color: #ffffff;
-    border: 1px solid teal;
     border-radius: 10px;
     margin: 0 auto;
     margin-bottom: 25px;
@@ -153,8 +172,7 @@ body {
 .content-1 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    border: 1px solid magenta; 
+    justify-content: center; 
     height: 50%;
     width: 100%;
 }
@@ -182,7 +200,6 @@ body {
 
 /* - 2nd Content on the Card - */
 .content-2 {
-    border: 1px solid red;
     height: 50%;
 }
 
@@ -235,19 +252,21 @@ body {
 .time-button {
     margin-top: 5px;
 }
+.date-time-flex-item-1 {
+    text-align: center;
+}
 
 /* ----------- Tablet Styles ----------- */
 @media screen and (min-width: 768px) {
     .section-1 {
         background-position: 185% -35%;
         background-size: 600px;
-    }
-    .content-container {
-        margin: 0 auto;
-    }
-    .container-1 {
         height: 1200px;
     }
+    .content-container {
+        height: 100%;
+    }
+    
     .container-1-logo {
         margin: 60px 0;
     }
@@ -273,6 +292,7 @@ body {
     .flex-item-2-header {
         text-align: left;
         font-size: 40px;
+        margin-bottom: 15px;
     }
     .flex-item-2-para {
         text-align: left;
@@ -280,8 +300,9 @@ body {
         font-size: 20px;
     }
     .header-button {
-        margin: 40px 0;
+        margin: 45px 0;
     }
+    
     .section-2 {
         height: 800px;
     }
@@ -292,6 +313,7 @@ body {
         width: 100%;
         height: 900px;
         bottom: 350px;
+        margin: 0 auto;
     }
     .card {
         flex-direction: row;
@@ -341,5 +363,88 @@ body {
     }
     .date-time-container {
         top: 470px;
+    }
+}
+
+/* ----------- Laptop and Desktop Stylings ----------- */
+@media screen and (min-width: 1024px) {
+    .section-1 {
+        height: 1000px;
+        background-size: 775px;
+        background-position: 500px -80%;
+    }
+    .flex-item-1-img {
+        width: 350px;
+    }
+    .flex-item-2-para {
+        font-size: 16px;
+    }
+    .header-button {
+        margin: 20px 0;
+    }
+    .item-1 {
+        width: 45%;
+    }
+    .item-2 {
+        width: 55%;
+        padding-top: 90px;
+    }
+    .section-2 {
+        height: 600px;
+        background-size: 1000px;
+        background-position: -300px 25%
+    }
+    .container-1 {
+        height: 600px;
+    }
+    .container-2 {
+        
+    }
+    .card-container {
+        flex-direction: row;
+        width: 820px;
+        bottom: 25px;
+        right: 100px;
+        height: 800px;
+        margin: 0 auto;
+        
+    }
+    .card {
+        flex-direction: column;
+        height: 450px;
+        width: 260px;
+        justify-content: center;
+        box-shadow: none;
+    }
+    .content-1 {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    .content-2 {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    .mobile-card-button {
+        display: block;
+        height: 50px;
+        width: 150px;
+        margin: 0 auto;
+    }
+    .tablet-card-button {
+        display: none;
+        height: 0;
+        width: 0;
+    }
+    .date-time-container {
+        top: 300px;
+        flex-direction: row;
+        width: 820px;
+        padding: 0;
+        justify-content: space-between;
+    }
+    .date-time-flex-item-1 {
+        text-align: left;
     }
 }
