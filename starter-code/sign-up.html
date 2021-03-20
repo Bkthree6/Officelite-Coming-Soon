@@ -9,20 +9,31 @@
     <title>Frontend Mentor | Officelite coming soon site</title>
 </head>
 <body>
-  Work smarter. Save time.
+  <section class="left-section">
+    <h1>Work smarter. Save time.</h1>
 
-  Easily manage your projects. Get on the list and receive in-app perks available only to 
-  early subscribers. We are moving into final development and getting ready for official launch soon.
+    <p>Easily manage your projects. Get on the list and receive in-app perks available only to 
+    early subscribers. We are moving into final development and getting ready for official launch soon.</p>
 
-  <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-  Coming 4 Nov 2020
-
-  <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-  47 Days
-  07 Hours
-  56 Min
-  14 Sec
-
+    <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
+    <div class="date-time-container">
+      <div class="date-time-flex-item-1">
+        <span class="date-coming">COMING</span>
+        <span class="date">4 NOV 2020</span>
+      
+        <div class="time-container">
+          <span class="time days"><div id="day">47</div> days</span>
+          <span class="time hours"><div id="hour">07</div> hours</span>
+          <span class="time minutes"><div id="min">56</div> min</span>
+          <span class="time seconds"><div id="sec">14</div> sec</span>
+        </div>
+      </div>
+      <div class="date-time-flex-item-2">
+        <button class="time-button button">Get Started</button>
+      </div>
+    </div>
+  </section>
+  <section class="right-section">
   Name
   Email Address
   Basic Pack Free
@@ -32,5 +43,6 @@
   Phone Number
   Company
   Get on the list
+  </section>
 </body>
 </html>
