@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    height: 100%;
+    border: 1px solid black;
+    overflow-x: hidden;
+}
+.section-flex-container {
+    display: flex;
+    flex-direction: column;
+    height: 1200px;
+    border: 1px solid green;
+}
+.section-1 {
+    background-color: #f2f2f2;
+    border: 1px solid blue;
+    height: 70%;
+}
+.logo-container {
+    text-align: center;
+    padding-top: 10%;
+}
+.content-container {
+    height: 80%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border: 1px solid teal;
+
+}
+.section-2 {
+    background-color: #333950;
+    border: 1px solid red;
+    height: 30%;
+}
+.form-container {
+    position: absolute;
+    margin: auto;
+    height: 110%;
+    top: 850px; left: 0; right: 0; bottom: 0; /* Increase 'top' to push the form down. */
+    width: 90%;
+    max-width: 500px;
+    padding: 8%;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+@media screen and (min-width: 575px) {
+    .form-container {
+        padding: 6%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .form-container {
+        top: 280px;
+        left: 39%;
+        max-width: 300px;
+        height: 90%;
+        padding: 4%;
+    }
+    .form {
+    }
+}
+form { 
+    width: 100%;
+}
+.label {
+    font-size: .95em;
+    padding-left: 6%;
+    color: gainsboro;
+}
+.input {
+    width: 95%;
+    height: 2.2em;
+    border: none;
+    border-bottom: 1px solid gainsboro;
+    margin-left: 2.5%;
+    margin-bottom: 10%;
+    padding-left: 3%;
+}
+
+.select {
+    height: 2.5em;
+    font-size: .95em;
+    padding-left: 2%;
+}
+option {
+    background-color: #ffffff;
+}
+option:hover {
+    background-color: #5175FF;
+    color: #ffffff;
+}
+.form-btn {
+    display: block;
+    border-radius: 25px;
+    background-color: #5175FF;
+    border: none;
+    height: 50px;
+    width: 90%;
+    margin: 0 auto;
+    color: #ffffff;
+}
+.form-container select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Add some styling */
+    
+    display: block;
+    height: 50px;
+    width: 95%;
+    padding-left: none;
+    margin-right: 2.5%;
+    float: right;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #333;
+    background-color: #ffffff;
+    -ms-word-break: normal;
+    word-break: normal;
+  }
+
+@media screen and (min-width: 768px) {
+    .logo-container {
+        text-align: left;
+        padding-left: 5%;
+        padding-top: 8%;
+    }
+    .content-container {
+        padding: 0 13%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section-flex-container {
+        flex-direction: row;
+        height: 800px;
+    }
+    .section {
+        height: 100%;
+    }
+    .section-1 {
+        width: 70%;
+    }
+    .logo-container {
+        padding-left: 18%;
+    }
+    .section-2 {
+        width: 30%;
+    }
+    .content-container {
+        padding: 10% 18%;
+    }
+}

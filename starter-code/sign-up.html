@@ -5,18 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="sign-up-styles.css">
 
   <title>Frontend Mentor | Officelite coming soon site</title>
 </head>
 <body>
-  <section class="left-section">
-    <h1>Work smarter. Save time.</h1>
+  <div class="section-flex-container">
+    <section class="section-1 section">
+      <div class="logo-container">
+        <img class="logo" src="assets/shared/logo.svg" alt="Logo">
+      </div>
+
+      <div class="content-container">
+        <div class="header-para-container">
+
+        </div>
+        <div class="date-time-container">
+
+        </div>
+
+      </div>
+      
+    </section>
+    <section class="section-2 section">
+      <div class="form-container">
+        <form>
+          <label class="label" for="name">Name</label><br>
+          <input class="input" type="text" id="" name="name"><br>
+          <label class="label" for="email">Email Address</label><br>
+          <input class="input"type="text" id="" name="email"><br>
+          <select class="input select" id="" name="pack">
+            <option value="basic">Basic Pack <span class="price">Free</span></option>
+            <option value="basic">Basic Pack <span class="price">Free</span></option>
+            <option value="pro">Pro Pack <span class="price">$9.99</span></option>
+            <option value="ultimate">Ultimate Pack <span class="price">$19.99</span></option>
+          </select><br>
+          <label class="label" for="phone">Phone Number</label><br>
+          <input class="input" type="text" id="" name="phone"><br>
+          <label class="label" for="company">Company</label><br>
+          <input class="input" type="text" id="" name="company"><br>
+          <button class="form-btn" type="button">Get on the list</button>
+        </form>
+      </div>
+    
+    </section>
+  </div>
+</body>
+</html>
+
+
+<!--
+<h1>Work smarter. Save time.</h1>
 
     <p>Easily manage your projects. Get on the list and receive in-app perks available only to 
     early subscribers. We are moving into final development and getting ready for official launch soon.</p>
 
-    <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
+     If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page 
     <div class="date-time-container">
       <div class="date-time-flex-item-1">
         <span class="date-coming">COMING</span>
@@ -33,8 +80,8 @@
         <button class="time-button button">Get Started</button>
       </div>
     </div>
-  </section>
-  <section class="right-section">
+
+
   Name
   Email Address
   Basic Pack Free
@@ -43,7 +90,5 @@
   Ultimate Pack $19.99
   Phone Number
   Company
-  Get on the list
-  </section>
-</body>
-</html>
+  
+-->
