@@ -1,116 +1,103 @@
+/* --------- Global Styles --------- */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-size: 16px;
 }
 body {
     font-family: 'Kumbh Sans', sans-serif;
     height: 100%;
-    border: 1px solid black;
     overflow-x: hidden;
 }
+
+/* --------- Section Flex Container --------- */
 .section-flex-container {
     display: flex;
     flex-direction: column;
-    height: 1200px;
-    border: 1px solid green;
+    height: 1300px;
 }
+
+/* ------- First Section of Content ------- */
 .section-1 {
-    background-color: #f2f2f2;
-    border: 1px solid blue;
+    background-color: #fBfBfB;
     height: 70%;
 }
+
+/* Logo Container */
 .logo-container {
     text-align: center;
     padding-top: 10%;
 }
+
+/* --- First Content --- */
 .content-container {
     height: 80%;
     padding-left: 5%;
     padding-right: 5%;
-    border: 1px solid teal;
-
 }
+
+/* Header and Paragrah container */
+.header-para-container {
+    text-align: center;
+    margin-top: 25%;
+    font-weight: 300;
+}
+.content-header {
+    font-size: 36px;
+}
+.content-para {
+    padding-top: 5%;
+    line-height: 1.5em;
+}
+
+/* ------- Second Section of Content ------- */
 .section-2 {
     background-color: #333950;
-    border: 1px solid red;
     height: 30%;
 }
+
+/* ------ Form Container ------ */
 .form-container {
     position: absolute;
     margin: auto;
     height: 110%;
-    top: 850px; left: 0; right: 0; bottom: 0; /* Increase 'top' to push the form down. */
+    max-height: 500px;
+    top: 950px; left: 0; right: 0; bottom: 0; /* Increase 'top' to push the form down. */
     width: 90%;
     max-width: 500px;
     padding: 8%;
     background-color: #ffffff;
     border-radius: 10px;
 }
-@media screen and (min-width: 575px) {
-    .form-container {
-        padding: 6%;
-    }
-}
-@media screen and (min-width: 1024px) {
-    .form-container {
-        top: 280px;
-        left: 39%;
-        max-width: 300px;
-        height: 90%;
-        padding: 4%;
-    }
-    .form {
-    }
-}
+
+/* --- Form Styles --- */
 form { 
     width: 100%;
+    max-height: 400px;
 }
 .label {
     font-size: .95em;
     padding-left: 6%;
-    color: gainsboro;
+    color: #747B95;
 }
 .input {
     width: 95%;
     height: 2.2em;
     border: none;
-    border-bottom: 1px solid gainsboro;
+    border-bottom: 1px solid #747B95;
     margin-left: 2.5%;
-    margin-bottom: 10%;
+    margin-bottom: 8%;
     padding-left: 3%;
 }
 
+/* Package Selection Element in the Form */
 .select {
-    height: 2.5em;
-    font-size: .95em;
-    padding-left: 2%;
-}
-option {
-    background-color: #ffffff;
-}
-option:hover {
-    background-color: #5175FF;
-    color: #ffffff;
-}
-.form-btn {
-    display: block;
-    border-radius: 25px;
-    background-color: #5175FF;
-    border: none;
-    height: 50px;
-    width: 90%;
-    margin: 0 auto;
-    color: #ffffff;
-}
-.form-container select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    /* Add some styling */
-    
     display: block;
-    height: 50px;
+    height: 45px;
     width: 95%;
     padding-left: none;
     margin-right: 2.5%;
@@ -121,8 +108,86 @@ option:hover {
     background-color: #ffffff;
     -ms-word-break: normal;
     word-break: normal;
-  }
+}
+option {
+    background-color: #ffffff;
+}
+option:hover {
+    background-color: #5175FF;
+    color: #ffffff;
+}
 
+/* Form Button Styles */
+.form-btn {
+    display: block;
+    border-radius: 25px;
+    background-color: #5175FF;
+    border: none;
+    height: 50px;
+    width: 90%;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+.date-time-container {
+    position: relative;
+    top: 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.time-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+.date-container {
+    text-align: center;
+    margin-bottom: 5%;
+}
+.date-coming {
+    letter-spacing: 4px;
+}
+.date {
+    color: #5175FF;
+    letter-spacing: 4px;
+}
+.time {
+    height: 32%;
+    width: 75px;
+    color:  #5175FF;
+    text-align: center;
+    background-color: #E9EDFB;
+    margin: 5px 5px;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+.number {
+    font-weight: 700;
+    font-size: 35px;
+}
+.descrip {
+    padding-top: 15%;
+    font-size: 15px;
+    color: #747B95;
+}
+
+/* -------- Additional Queries to help keep correct positioning -------- */
+@media screen and (min-width: 465px) {
+    .form-container {
+        max-height: 490px;
+    }
+}
+@media screen and (min-width: 500px) {
+    .form-container {
+        padding: 6%;
+        max-height: 550px;
+    }
+}
+
+/* -------- Tablet Styles -------- */
 @media screen and (min-width: 768px) {
     .logo-container {
         text-align: left;
@@ -132,8 +197,16 @@ option:hover {
     .content-container {
         padding: 0 13%;
     }
+    .date-time-container {
+        top: 10%;
+    }
+    .form-container {
+        top: 900px;
+    }
 }
 
+
+/* -------- Laptop and Desktop Styles -------- */
 @media screen and (min-width: 1024px) {
     .section-flex-container {
         flex-direction: row;
@@ -146,12 +219,40 @@ option:hover {
         width: 70%;
     }
     .logo-container {
-        padding-left: 18%;
+        padding-left: 13%;
+    }
+    .content-container {
+        padding: 21% 0;
+        padding-right: 25%;
+        padding-left: 13%;
+    }
+    .header-para-container {
+        margin-top: 2%;
+        width: 100%;
+        text-align: left;
+    }
+    .content-header {
+        font-size: 32px;
+    }
+    .content-para {
+        font-size: 15px;
     }
     .section-2 {
         width: 30%;
     }
-    .content-container {
-        padding: 10% 18%;
+    .form-container {
+        top: 280px;
+        left: 42%;
+        max-width: 300px;
+        height: 80%;
+        padding: 4%;
     }
+    .date-time-container {
+        text-align: left;
+        align-items: flex-start;
+    }
+    .time-container {
+        justify-content: left;
+    }
+    
 }
