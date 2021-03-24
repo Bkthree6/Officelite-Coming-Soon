@@ -20,8 +20,13 @@ body {
 
 /* ------- First Section of Content ------- */
 .section-1 {
-    background-color: #fBfBfB;
+    background-color: #F9F9F9;
     height: 70%;
+    background-image: url('/starter-code/assets/home/bg-pattern-header.svg');
+    background-repeat: no-repeat;
+    background-size: 500px;        
+    background-position: 50% -200px;
+
 }
 
 /* Logo Container */
@@ -55,6 +60,11 @@ body {
 .section-2 {
     background-color: #333950;
     height: 30%;
+    background-image: url('/starter-code/assets/sign-up/bg-pattern-side.svg');
+    background-repeat: no-repeat;
+    background-size: 500px;        
+    background-position: 50% 10px;
+    z-index: 1;
 }
 
 /* ------ Form Container ------ */
@@ -69,6 +79,7 @@ body {
     padding: 8%;
     background-color: #ffffff;
     border-radius: 10px;
+    z-index: 2;
 }
 
 /* --- Form Styles --- */
@@ -127,6 +138,10 @@ option:hover {
     width: 90%;
     margin: 0 auto;
     color: #ffffff;
+}
+.form-btn:hover {
+    background-color: #E9EDFB;
+    color: #5175FF;
 }
 
 .date-time-container {
@@ -189,6 +204,9 @@ option:hover {
 
 /* -------- Tablet Styles -------- */
 @media screen and (min-width: 768px) {
+    .section-1 {
+        background-image: none;
+    }
     .logo-container {
         text-align: left;
         padding-left: 5%;
@@ -196,6 +214,10 @@ option:hover {
     }
     .content-container {
         padding: 0 13%;
+    }
+    .section-2 {
+        background-size: 1500px;
+        background-position: 50% -500px;
     }
     .date-time-container {
         top: 10%;
@@ -208,9 +230,11 @@ option:hover {
 
 /* -------- Laptop and Desktop Styles -------- */
 @media screen and (min-width: 1024px) {
+    body {
+        overflow-y: hidden;
+    }
     .section-flex-container {
         flex-direction: row;
-        height: 800px;
     }
     .section {
         height: 100%;
@@ -222,7 +246,7 @@ option:hover {
         padding-left: 13%;
     }
     .content-container {
-        padding: 21% 0;
+        padding: 120px 0;
         padding-right: 25%;
         padding-left: 13%;
     }
@@ -239,13 +263,14 @@ option:hover {
     }
     .section-2 {
         width: 30%;
+        background-position:45% -575px;
     }
     .form-container {
-        top: 280px;
+        top: 75px;
         left: 42%;
         max-width: 300px;
-        height: 80%;
-        padding: 4%;
+        height: 60%;
+        padding: 35px 20px;
     }
     .date-time-container {
         text-align: left;
