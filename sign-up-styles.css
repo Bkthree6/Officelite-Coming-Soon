@@ -71,9 +71,9 @@ body {
 .form-container {
     position: absolute;
     margin: auto;
-    height: 110%;
+    height: 150%;
     max-height: 500px;
-    top: 950px; left: 0; right: 0; bottom: 0; /* Increase 'top' to push the form down. */
+    top: 1450px; left: 0; right: 0; bottom: 0; /* Increase 'top' to push the form down. */
     width: 90%;
     max-width: 500px;
     padding: 8%;
@@ -219,11 +219,14 @@ option:hover {
         background-size: 1500px;
         background-position: 50% -500px;
     }
+    .form-container {
+        top: 1250px;
+    }
     .date-time-container {
         top: 10%;
     }
     .form-container {
-        top: 900px;
+        top: 1350px;
     }
 }
 
